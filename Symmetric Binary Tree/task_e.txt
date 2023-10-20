@@ -1,0 +1,19 @@
+ Symmetric Binary Tree
+
+Problem description
+A rooted tree with weighted nodes is called a symmetric binary tree if it satisfies the following conditions: 
+	Binary tree;
+	If the left and right subtrees of all nodes in the tree are swapped, the structure and the value of the nodes of the new tree are the same as those of the original tree. 
+
+In the following figure, numbers inside nodes represent their weight, and the ids outside the nodes represent the serial number of the nodes.
+ 
+Given a binary tree, find its symmetric subtree with the most nodes. Please output the number of nodes in this subtree.
+Note: A tree with root only is also a symmetric binary tree. In this question, a “subtree” with node T as its sub-root refers to the binary tree formed by node T and all its descendants.
+
+Input
+The positive integer n (n ≤ 106) in the first line represents the number of nodes in a given tree. The number of nodes ranges from 1 to n, where node 1 is the root of the tree. 
+The second line contains n positive integers, separated by a space, and the ith positive integer vi represents the weight of node i. 
+Next n lines, each line contains two positive integers li, and ri, respectively representing the serial number of node i’s left and right children. If there is no left/right child, it is denoted by -1. The two numbers are separated by a space.
+
+Output
+The output is a single line containing an integer representing the number of nodes in the largest symmetric binary subtree of a given tree.

@@ -1,0 +1,17 @@
+Lay the carpet
+
+Problem Description
+To prepare for a unique award ceremony, organizers covered a rectangular area of the venue (which can be thought of as the first quadrant of a rectangular coordinate system) with rectangular carpets. There are n carpets, numbered from 1 to n. Now lay these carpets parallel to the axis in order of number from smallest to largest. The carpet that is laid later overlays the carpet that has been laid before.
+Once all the carpets have been laid, the organizer wants to know the serial number of the top carpet that covers a certain point on the ground. Note: Points on the boundary of the rectangular carpet and the four vertices count as covered by the carpet.
+
+Input
+There are a total of n+2 lines.
+
+The first line, an integer n, means there are n carpets in total.
+
+In the next n lines, row i+1 represents information about carpet i. It contains four integers a, b, g and k, respectively representing the coordinate of the lower left corner of the carpet (a,b) and the length of the carpet in the X-axis and Y-axis directions. Every two integers are separated by spaces.
+
+The n+2 line contains two integers x and y, which represent the coordinate of a certain point on the ground (x,y).
+
+Output
+The output has 1 line, containing an integer that represents the serial number of the desired carpet; if the certain point is not covered by any carpet, then output -1.

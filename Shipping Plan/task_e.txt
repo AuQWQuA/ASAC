@@ -1,0 +1,24 @@
+ Shipping Plan
+
+Problem Description
+In 2044 AD, humanity entered the cosmic epoch.
+
+There are n planets in country L and n-1 two-way routes, each of which is established between two planets. These n-1 routes connect all the planets in L.
+
+P is in charge of a logistics company. The company has many shipping plans. Each shipping plan is like this: there is a logistics ship that needs to fly from planet Ui to planet Vi along the fastest space path. Obviously, it takes time for a ship to travel through a route. For route j, it takes tj time for any ship to travel through it, and there is no interference between any two ships.
+
+To encourage scientific and technological innovation, the king of country L agrees to allow P’s logistics company to participate in the route construction of country L, that is, allow P to transform a route into a wormhole, and the spaceship will pass through the wormhole without consuming time.
+
+Before the completion of the wormhole construction, P’s logistics company pre-connected M transportation plans. After the construction of the wormhole is completed, these m shipping plans will start at the same time, and all ships will depart together. When all the M shipping plans are completed, the stage work of P’s logistics company will be completed.
+
+If P is free to choose which channel to transform into a wormhole, try to find out what is the shortest time it takes for P’s logistics company to complete the phased work.
+
+Input
+The first line includes two positive integers n and m, representing the number of planets in country L and the number of shipping plans pre-connected by small P. The planets are numbered from 1 to n.
+
+The next n-1 lines describe the construction of the routes, where line i contains three integers ai, bi, and ti, which means that the two-way route i is built between the two planets ai and bi, and it takes ti time for any spacecraft to pass through it.
+
+The next M lines describe the situation of the shipping plan, where the jth line contains two positive integers uj and vj, indicating that the jth shipping plan is to fly from planet uj to planet vj.
+
+Output
+There is an integer representing the minimum time it takes for P’s logistics company to complete the stage work.

@@ -1,0 +1,33 @@
+Travel By Car
+
+Problem Description
+
+A and B decide to take A vacation trip. They number the cities they want to visit from 1 to n. The smaller city is to the west of the larger city, and each city is known to have different altitudes. The altitude of city i is hi. The distance between city i and j, di,j, is the absolute value of the altitude difference between the two cities, which means di,j = | hi - hj |.
+
+During the journey, A and B take turns driving, A drives on the first day and rotates every day after that. They plan to choose a city s as their starting point, drive all the way east, and end the trip by driving at most x kilometers.
+
+Driving styles differ between A and B, with B always choosing the nearest city along the heading direction as the destination, while A always chooses the second nearest city along the heading direction as the destination (Note: in this case, if the distance between the current city and these two cities is the same, it is considered to be closer to the city with lower altitude.) If either of them cannot choose the destination city according to their principles, or if reaching the destination would take the total distance traveled beyond x kilometers, they will end their trip.
+
+Before setting off, A wants to know two questions:
+
+1. For a given x=x0, which city could be taken as the starting point to minimize the ratio of the total number of driving distances of A to the total number of driving distances of B (if the driving distances of B are 0, the ratio can be regarded as infinity, and the two infinities are regarded as equal). If the ratio of the total number of miles driven by A to the total number of miles driven by B from multiple cities is the smallest, print out the city with the highest altitude.
+
+2. For any given x=xi and starting city si, the total number of miles driven by A and the total number of miles driven by B.
+
+Input
+The first line contains an integer n, representing the number of cities.
+
+The second line has n integers, separated by spaces, representing the altitude from city 1 to city n, i.e. h1, h2... hn, and each hi is different.
+
+The third line contains an integer x0.
+
+The fourth line contains an integer m for the given m groups si and xi.
+
+For the next m lines, each contains 2 integers, si, and xi, representing a maximum of xi km starting from city si.
+
+Output
+The output is m+1 lines in total.
+
+The first line contains an integer s0 indicating that, for the given x0, the ratio of the total number of miles driven by A to the total number of miles driven by B from the city numbered s0 is the smallest.
+
+The next m lines, each containing 2 integers separated by a space, represent the total number of miles driven by A and the total number of miles driven by B given si and xi.

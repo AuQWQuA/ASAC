@@ -1,0 +1,35 @@
+Earthworms
+
+Problem Description
+In this case, we’ll use the symbol ⌊c⌋ to mean rounding down c. For example: ⌊ 3.0 ⌋ = ⌊ 3.1 ⌋ = ⌊ 3.9 ⌋ = 3.
+
+Cricket country is suffering from earthworms recently! The fleas in the flea country next door also have nothing to do with the earthworms, so King Cricket has to ask the master of knives to help them destroy the earthworms.
+
+Cricket country now has a total of n earthworms (n is a positive integer). Each earthworm has a length. Let’s say the length of the ith earthworm is ai (i =1, 2, ..., n) and ensure that all the lengths are non-negative integers (i.e.: there may exist earthworms of length 0).
+
+Every second, the master of knives will accurately find the longest earthworm among all the earthworms (choose any one of the longest if there are more than one) and cut it in half. The position where the master of knives cuts the earthworm is determined by a constant p (which is a rational number satisfying 0 < p < 1). Let this earthworm be of length x, and the master of knives will cut it into two earthworms of length  ⌊px ⌋and x-⌊px ⌋. In particular, if one of the two numbers is equal to 0, the earthworm of length 0 will also be kept. In addition, except for the two new worms that have just been created, the length of the earthworms will increase by q (which is a non-negative integer constant).
+
+King Cricket knows that this is not a long-term solution, because not only will there be more and more worms, but they will also get longer and longer. King Cricket decides to appeal to a mysterious figure with mystical powers, but the support would take another m seconds to arrive...(m is a non-negative integer)
+
+King Cricket wants to know what’s going on in those m seconds. Specifically, he wants to know:
+
+-The length of the cut earthworm before it was cut in each of the m seconds (there are m numbers);
+-length of all earthworms after m seconds (with n + m numbers).
+
+Of course, King Cricket knows how to do this! But he wants to test you...
+
+Input
+The first line contains six integers n,m,q,u,v, and t, where: see [Problem Description] for the meaning of n,m,q; u,v,t are all positive integers. You need to calculate p=u/v yourself (make sure 0 < u < v); t is the output parameter, the meaning of which will be explained in [Output].
+
+The second line contains n non-negative integers a1, a2, ..., an, which is the length of the n earthworms at the beginning.
+
+Two adjacent numbers are separated by one space.
+
+Ensure that 1 ≤ n ≤ 105, 0 ≤ m ≤ 7 × 106, 0 < u < v ≤ 109, 0 ≤ q ≤ 200, 1 ≤ t ≤ 71, and 0 ≤ ai ≤ 108.
+
+Output
+The first line outputs ⌊ ⌋integers, which are the length of the cut earthworm (before it is cut) at tth second, 2tth second, 3tth second... in chronological order.
+
+The second line outputs ⌊ ⌋integers, which are the length of the earthworms after m seconds. Please output these in descending order, output the lengths ranked t, 2t, 3t... in order.
+
+Two adjacent numbers are separated by a space. You should print a blank line even if there are no numbers to print on a particular line.

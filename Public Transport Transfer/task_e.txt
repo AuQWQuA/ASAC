@@ -1,0 +1,20 @@
+ Public Transport Transfer
+
+Problem Description
+In order to encourage people to use public transportation, city B, a famous tourist city, has launched a preferential program of subway-bus transfer: 
+
+1. After a subway ride, you can get a special ticket, which is valid for 45 minutes. You can use the special ticket during the validity period to take a bus with a fare no more than the subway fare for free. By “during the validity period”, it means that the time between the starting time of the bus ride and the starting time of the subway ride is less than or equal to 45 minutes, namely: tbus− tsubway ≤ 45.
+2. The special tickets can be accumulated, that is, you can take the subway several times and then use the special tickets to take the bus continuously. 
+3. When taking the bus, if there are available special tickets, one must use the special ticket; If there are more than one special tickets that meet the condition, the earliest special ticket will be consumed first. 
+
+Now that you have Xiaoxuan’s recent public transport records, can you help him calculate his expenses?
+
+Input
+The first line of the input file contains a positive integer, n, representing the number of ride records. 
+
+This is followed by n lines, each containing three integers separated by spaces. The first integer in row i represents the means of transportation recorded in record i, with 0 representing the subway and 1 representing the bus; the second integer represents the price of the ticket of record i; the third integer represents the starting time ti (the number of minutes from time 0) of record i . 
+
+We ensure that trips are recorded in chronological order and that there won’t be two trips recorded in the same minute.
+
+Output
+The output file is a line containing a positive integer representing the total cost of Xiaoxuan’s trip.

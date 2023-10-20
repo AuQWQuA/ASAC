@@ -1,0 +1,40 @@
+Change Classrooms
+
+Problem Description
+For Niuniu, who just started college, the first problem he faced was how to apply for the right program based on the actual situation.
+
+Among the available courses, there are 2n classes scheduled over n time periods. In the ith (1 ≤ i ≤ n) time slot, two courses with the same content are held in different locations at the same time, where Niuniu is prearranged to be taught in classroom ci, while the other course is held in classroom di.
+
+Without submitting any application, students are required to complete all n scheduled classes in the sequence of time slots. Students need to make an application if they want to change their classroom for the i session. If the application is approved, the student can attend class in room di during the ith period, otherwise, the class will remain in room ci.
+
+Due to the high demand for changing classrooms, the application may not be approved. Through calculation, Niuniu found that the probability of the application being approved when changing the classroom of class i was a known real number ki, and the probability of the application being approved for different courses was independent of each other.
+
+The university stipulates that all applications can only be submitted at once before the semester begins, and each person can only choose up to m classes to apply for. This means that Niuniu must decide once and for all whether to apply for a change of classroom for each class, rather than deciding whether to apply for other classes based on the results of applications for some classes; Niuniu can apply for the m courses he most wants to change classrooms, but he doesn’t have to use all m applications, or he can apply for no course at all.
+
+Because different courses may be arranged in different classrooms, Niuniu needs to use the time between classes to travel from one classroom to another.
+
+Niuniu’s university has v classrooms and e roads. Each road connects two classrooms and is passable in both directions. Due to the length of the road and the level of congestion, the physical energy required to traverse the different roads may vary. When class i (1 ≤ i ≤ n-1) is over, Niuniu will start from the classroom of this class and choose a path that consumes the least amount of physical energy to go to the classroom of the next class.
+
+Now Niuniu wants to know which courses he can apply to minimize the expected value of the sum of the physical energy he needs to move between classrooms. Please help him find this minimum value.
+
+Input
+There are four integers n, m, v, and e in the first line. n denotes the number of time slots within the semester; m denotes the maximum number of classes that Niuniu can apply to change. v denotes the number of classrooms in Niuniu’s university; e denotes the number of roads in Niuniu’s university.
+
+There are n positive integers in the second line, and the ith (1 ≤ i ≤ n) positive integer represents ci, which is the classroom where Niuniu is scheduled to attend classes during the ith time period; ensure that 1 ≤ ci ≤ v.
+
+There are n positive integers in the third line, and the ith (1 ≤ i ≤ n) positive integer denotes di, which is the other classroom having the same course in the ith time period; ensure that 1 ≤ di ≤ v.
+
+There are n real numbers in the fourth line, and the ith (1 ≤ i ≤ n) real number represents ki, which is the probability that Niuniu’s application for changing classrooms in the ith time period could be approved. Ensure that 0 ≤ ki ≤ 1.
+
+For the next e lines, there are three positive integers aj, bj, wj in each line, which means that there is a two-way road connecting the classrooms aj and bj, and the physical energy required to pass this road is wj; ensure that 1 ≤ aj, bj ≤ v, 1 ≤ wj ≤ 100.
+
+Ensure that 1 ≤ n ≤ 2000, 0 ≤ m ≤ 2000, 1 ≤ v ≤ 300, and 0 ≤ e ≤ 90000.
+
+Ensure that all the classrooms can be reached from any one of them by the roads in the school.
+
+Ensure the real numbers in the input contain at most 3 decimal places.
+
+Output
+Output a line containing a real number, rounded to exactly 2 decimal places, indicating the answer. Your output must be exactly the same as the standard output to be correct.
+
+The test data guarantees that the absolute difference between the rounded answer and the exact answer is no greater than 4 × 10-3. (If you don't know what a floating-point error is, this paragraph can be interpreted as meaning: For most algorithms, you can use floating-point as normal without doing anything special with it.)

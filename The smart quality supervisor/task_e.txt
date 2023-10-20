@@ -1,0 +1,25 @@
+The smart quality supervisor
+
+Problem Description
+‘T’ is a quality supervisor who was recently tasked with inspecting the quality of a batch of minerals. There are n ores in the batch, numbered from 1 to n, each with its weight wi and value vi. The process for inspecting minerals is as follows:
+
+1. Given m intervals [li, ri];
+
+2. Select a parameter W;
+
+3. For an interval [li,ri], calculate the test value yi of the ore on this interval:
+ 
+j is the number of the ore.
+
+The inspection result Y of this batch of minerals is the sum of the inspection values of each interval. Namely:  
+If the inspection result of this batch of minerals is too different from the given standard value S, another batch of minerals needs to be inspected. T doesn’t want to spend time testing another group of minerals, so he wants to make the inspection result as close to the standard values as possible by adjusting the value of the parameter W. That is, to make |S-y| minimum. Would you please help to calculate the minimum value?
+
+Input
+The first line contains three integers n, m, and s representing the number of ores, the number of intervals, and the standard value respectively.
+
+For the next n lines, there are two integers per line, separated by a space. Line i+1 represents the weight wi and value vi of ore i.
+
+The next m lines represent intervals. There are two integers per line, separated by a space, and the i +n+1 line represents the two endpoints li and ri of the interval [li, ri]. Note: Different intervals may coincide or overlap with each other.
+
+Output
+The output is a single line containing an integer representing the minimum desired value.

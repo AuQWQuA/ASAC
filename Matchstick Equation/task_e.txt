@@ -1,0 +1,17 @@
+Matchstick Equation
+
+Problem description
+Given n matchsticks, how many equations of the form “A+B=C” can you make? In the equation, A, B, and C are integers made out of matchsticks (if the number is not zero, the highest digit cannot be zero). The numbers 0-9 could be made with matchsticks as shown in the picture:
+ 
+Note:
+1. The plus sign and the equal sign each need two matchsticks.
+
+2. If A≠B, then A+B=C and B+A=C are regarded as different equations (A, B, C ≥ 0).
+
+3. All n matchsticks must be used.
+
+Input
+An integer n (1 ≤ n ≤ 24).
+
+Output
+The output file has one integer indicating the number of different equations that can be spelled.

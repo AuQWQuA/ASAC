@@ -1,0 +1,2 @@
+题目描述
+求关于xx的同余方程 a x \equiv 1 \pmod {b}ax≡1(modb) 的最小正整数解。

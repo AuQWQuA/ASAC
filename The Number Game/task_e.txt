@@ -1,0 +1,12 @@
+The Number Game
+
+Problem Description
+K sent P a 01 string of length 8 to play a number game. P wanted to know how many 1s were in the string. 
+
+Note: The 01 string is a string in which each character is 0 or 1. For example, “101” (without the double quotes) is a 01 string of length 3. 
+
+Input 
+The input file has only one line, a 01 string s of length 8. 
+
+Output
+The output file is a single line containing an integer, which indicates the number of character 1 in the 01 string.

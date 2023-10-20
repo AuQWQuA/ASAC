@@ -1,0 +1,10 @@
+Title Statistics
+
+Problem Description
+Kaikai has just written a wonderful composition. How many characters are there in the title of the composition? Note: Headings may contain upper and lower case English letters, numeric characters, spaces, and newlines. When counting the number of characters in the title, spaces and newlines are not counted.
+
+Input
+The input is just one line, a string s.
+
+Output
+The output file is one line that contains an integer, representing the number of characters in the title of the composition (excluding spaces and newlines).

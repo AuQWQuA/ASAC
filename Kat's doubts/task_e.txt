@@ -1,0 +1,10 @@
+Kat's doubts
+
+Problem Description
+Kai has gold coins in two denominations. Both denominations are positive integers and prime to each other. There are an infinite number of each coin. There are some items he can’t pay for exactly with just these two coins without change. Now Kai wants to know how much gold coins the most expensive item that cannot be accurately paid for cost. Note: The input data guarantees that there are items for which Kai cannot accurately pay.
+
+Input
+There are two positive integers a and b, separated by a space, representing the denomination of the gold coins of Kai.
+
+Output
+There is a positive integer N representing the value of the most expensive item that Kai cannot accurately pay for without change with the gold coins in his hand.

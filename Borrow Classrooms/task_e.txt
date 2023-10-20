@@ -1,0 +1,26 @@
+Borrow Classrooms
+
+Problem Description
+During college, it is often necessary to rent classrooms. It is necessary to ask the university to borrow classrooms for everything from department events to study groups for self-study discussions. The size and function of the classrooms are different, and the identity of the person borrowing the classroom is different, thus the procedure for borrowing the classroom is also different.
+
+Faced with the huge amount of information about renting classrooms, we naturally want to program to solve this problem.
+
+We need to process the information on classroom booking for the next n days, where on day i the school has ri classrooms available to rent. There are m orders in total, and each order is described by three positive integers dj, sj, tj, which means that some renter needs to rent classrooms from day sj to day tj (including day sj and day tj), and dj classrooms need to be rented every day.
+
+We assume that the renter has no requirement on the size or location of the classroom. That is, for each order, we only need to provide dj classrooms per day, regardless of which classrooms they are and whether they are the same classrooms every day.
+
+The principle of borrowing classrooms is first come first served, which means we need to assign classrooms to each order in the order of the order. If we encounter an order that cannot be fulfilled during the allocation process, we need to stop the allocation of classrooms and notify the current applicant to modify the order. Unsatisfied here means that at least one day from day sj to day tj has less than dj classrooms left.
+
+Now we need to know if there will be orders that cannot be fulfilled. If so, which application needs to be notified to modify the order?
+
+Input
+The first line contains two positive integers n and m, representing the number of days and the number of orders.
+
+The second line contains n positive integers, where the ith number is ri, which represents the number of classrooms available for rental on the ith day.
+
+Then there are m lines, each containing three positive integers dj,sj, and tj, representing the number of rooms rented, the starting day, and the ending day.
+
+Every two adjacent numbers are separated by a space. Days and orders are numbered with integers starting from 1.
+
+Output
+If all orders could be satisfied, the output has only one line and contains an integer 0. Otherwise (the order cannot be fully satisfied) output two lines. In the first line, output the negative integer -1. And in the second line, output the serial number of the applicant whose order needs to be modified.

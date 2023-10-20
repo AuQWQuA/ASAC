@@ -1,0 +1,29 @@
+The Center of Gravity of the Tree
+
+Problem Description
+Littleeasy is learning discrete mathematics. Today’s lecture is about graph theory fundamentals. In class, he made the following two notes:
+
+1. A tree of size n consists of n nodes and n−1 undirected edges and satisfies that there is and only is one simple path between any two nodes. If one deletes a node and its associated edges from the tree, the tree will split into subtrees. If one removes an edge from the tree (keeping the associated nodes, the same below) and the tree will split into exactly two subtrees.
+2. For a tree of size n and any node c in the tree, c is the center of gravity of the tree if and only if when c and its associated edges are deleted from the tree, the sizes of all the split subtrees are at most ⌊  ⌋(where ⌊x ⌋ is the down-rounding function). For a tree that contains at least one node, it can only have 1 or 2 centers of gravity.
+
+After class, the teacher gave a tree S of size n. The nodes in the tree were numbered from 1 to n. Littleeasy’s assignment is to find the sum of the numbers of the centers of gravity of the two subtrees that S splits into after deleting each edge individually. That is:
+
+ 
+
+In the above expression, E represents the set of edges of tree S, and (u,v) represents an edge connecting points u and v. S’u and S’v denote the subtrees that are split out where u point and v point are located after deleting edge (u,v) from tree S respectively.
+
+Littleeasy thinks that the assignment is not easy, so he has to ask you for help, please help him.
+
+Input
+This question contains multiple sets of test data.
+
+There is an integer T in the first line, representing the number of groups.
+
+Next, give each set of input data in turn, and for each set:
+
+There is an integer n in the first line, representing the size of the tree S.
+
+In the next n−1 lines, each line has two space-separated integers ui and vi, representing an edge in the tree (ui, vi).
+
+Output
+There are T lines, with one integer per line, and the integer in line i represents: the sum of the numbers of the centers of gravity of the two subtrees that the tree given by the data of group i  split into after deleting each edge individually.

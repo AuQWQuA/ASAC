@@ -1,0 +1,20 @@
+Machining Parts
+
+Problem Description
+Kaikai’s factory is methodically producing a kind of magical parts, and the production process of the magical part is also magical. There are n workers in the factory and they are numbered from 1 to n. Some workers have two-way conveyor belts for parts. Ensure that there is no more than one conveyor belt between each two workers. 
+
+If worker x wants to produce a part of stage L (L>1), then all workers directly connected with worker x by the conveyor belts will need to produce a part that has been processed to stage L−1 (but worker x himself does not need to produce parts with stage L−1). 
+
+If worker x wants to produce a part of stage 1, all workers directly connected to worker x by the conveyor belts will need to provide worker x with a raw material.
+ 
+Xuanxuan is worker No. 1. Now q orders are given. The ith order indicates that the worker ai wants to produce a part of stage Li. Xuanxuan wants to know if he has to supply someone with raw materials for each work order. He knows you’re smart enough to figure it out for him!
+
+Input
+The first line contains three positive integers, n, m, and q, representing the number of workers, the number of conveyor belts, and the number of work orders respectively.
+
+For the next m lines, there are two positive integers u and v in each line, representing that there is a conveyor belt between worker u and worker v. It is ensured that u≠v.
+
+For the next q lines, there are two positive integers a and L in each line, representing that work a wants to produce a part of stage L.
+
+Output 
+There are q lines, and every line has a string of “Yes” or “No”. If Xuanxuan, as worker 1, needs to supply raw materials when following order i, then output “Yes” in line i; otherwise, output “No” in line i. Note that the output do not contain quotation marks.

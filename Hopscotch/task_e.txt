@@ -1,0 +1,17 @@
+Hopscotch
+
+Problem Description
+Hopscotch is a worldwide children’s game and is also one of the traditional folk sports games in China. 
+
+The rules of hopscotch are as follows: 
+Determine a starting point on the ground, and then draw n squares to the right of the starting point, all on the same line. Each square contains a number (integer) that represents the number of points you can get to reach that cell. The player jumps to the right from the starting point for the first time, into a grid to the right of the starting point. Then, take a second jump to the right from the current position, and so on. The rules state: 
+Each time the player must jump into a square to the right of the current position. The player can end the game at any time, and the points the player gets are the sum of the numbers in the previous squares. 
+Now R has developed a bouncing robot to take part in the game. But this robot has a very serious defect, it can only bounce to the right for a fixed distance d. R wants to improve his robot. If he spends g gold coins to improve his robot, then his robot’s flexibility will increase by g, but it should be noted that the distance of each bounce is at least 1. Specifically, when g<d, his robot can choose the right bounce distance from d−g, d−g+1, d−g+2,..., d+g−2, d+g−1, d+g; Otherwise (when g≥d), his robot can choose to bounce to the right at a distance of 1, 2, 3..., d+g−2, d+g−1, d+g. 
+Now R wants to get at least K points. How many gold coins should he spend at least on improving his robot?
+
+Input
+The three positive integers n, d, and k in the first line represent the number of squares, the fixed distance the robot bounces before improvement, and the number of points R wants to get at least. Two adjacent numbers are separated by a space. 
+For the next n lines, each line contains two integers xi and si, representing the distance from the starting point to the ith square and the number of points of the ith square. The two numbers are separated by a space. Make sure that xi is entered in the order from smallest to largest.
+
+Output
+There is one line containing an integer indicating how many gold coins it would take to improve R’s robot. If he can’t get at least K points anyway, output −1.

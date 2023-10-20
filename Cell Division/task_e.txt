@@ -1,0 +1,22 @@
+Cell Division
+
+Problem description
+Dr. Hanks is a well-known expert in the field of BT (Bio-Tech). Now, he is preparing for a cell experiment: culturing cell samples.
+
+Dr. Hanks now has N types of cells, numbered from 1 to N. A cell of type i can divide into Si cells of the same kind in one second (Si is a positive integer). Now he has to take a cell of one kind and put it in a culture dish, let it divide freely, and grow it. After a period of time, evenly divide all the cells in the culture dish into M test tubes to form M samples for the experiment. The number of Dr. Hanks’ test tubes, M, is very large. The basic data types of ordinary computers can not store such a large value of M. Fortunately, M can always be expressed as m1 to the power of m2, that is, M = m1m2, where m1 and m2 are positive integers that can be stored by the basic data types.
+
+Note that it’s not allowed to divide individual cells throughout the experiment. For example, if there are 4 cells in a culture dish at some point, Dr. Hanks can divide them into two tubes, two in each, and begin the experiment. But if there are five cells in a culture dish, he could not divide them equally into two tubes. The doctor then has to wait a while for the cells to divide so that they could be divided equally, or switch to a different type of cells to culture.
+
+To get the experiment started early, after selecting a type of cell to start the culture, Dr. Hanks will always stop the culture and start the experiment when the resulting cells are “just enough to be evenly divided into M tubes”. Now he wants to know to choose which type of cells to culture so that the experiments can begin at the earliest.
+
+Input
+The first line has a positive integer N, representing the number of cell species.
+
+The second line has two positive integers, m1 and m2, separated by a space, representing the total number of tubes M = m1m2 .
+
+The third line has N positive integers, and the ith number Si is the number of cells that the ith type of cell can divide into in 1 second.
+
+Output
+An integer representing the minimum amount of time (in seconds) that has elapsed since the start of cell culture until the experiment can begin.
+
+If whichever type of cell Dr. Hanks chooses does not meet the requirements, output the integer -1.

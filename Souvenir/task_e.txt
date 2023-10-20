@@ -1,0 +1,23 @@
+Souvenir
+
+Problem Description
+Xiaowei suddenly obtained a super power, he knows the daily price of N kinds of souvenirs in the future T days. The price of a souvenir is the amount of gold coins required to buy the souvenir and the amount of gold coins returned by selling a souvenir. 
+
+Every day, Xiaowei can make unlimited transactions of the following two types: 
+
+1. Choose a souvenir, if he has enough gold coins, buy the souvenir at its price on that day; 
+2. Sell any souvenir he has and get some gold coins back at its price on that day. 
+
+The gold coins returned each day can be immediately used to buy souvenirs, and souvenirs purchased can be sold on the same day for coins. Of course, it’s okay to always keep it.
+ 
+T days later, Xiaowei’s super power will disappear. So he must sell all the souvenirs on day T for gold. 
+
+Xiaowei now has M gold coins and he wants to have as many as possible coins when his super power is gone.
+
+Input
+The first line contains three positive integers T, N, and M, separated by spaces between every two adjacent numbers, which respectively represent the number of days T, the number of souvenirs N, and the number of gold coins Xiaowei owns now M. 
+
+For the next T lines, each line contains N positive integers separated by a space between every two adjacent numbers. The N positive integers in line i are Pi,1, Pi,2... ,Pi,N, where Pi,j represents the price of souvenir j on day i.
+
+Output
+The output file is a line containing a positive integer representing the maximum coins Xiaowei has when his super power disappears.

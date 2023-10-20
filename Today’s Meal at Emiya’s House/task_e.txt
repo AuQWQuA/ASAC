@@ -1,0 +1,24 @@
+Today’s Meal at Emiya’s House
+
+Problem Description
+Emiya is a high school student who has mastered n cooking methods and uses m main ingredients. For the sake of narration, we numbered the cooking methods from 1 to n and the main ingredients from 1 to m.
+
+Each dish made by Emiya will use exactly one cooking method and exactly one main ingredient. More specifically, Emiya will make ai,j different dishes using the cooking method i and main ingredient j (1 ≤ i ≤ n, 1 ≤ j ≤ m). This means that Emiya will make a total of  different dishes.
+Emiya is going to prepare a meal for Yazid and Rin today, but the three have different requirements for the dishes. More specifically, for a recipe that includes k dishes:
+- Emiya will not make everyone stay hungry, so he will make at least one dish, namely k≥1.
+- Rin wants to taste dishes made by different cooking methods, so she requires each dish to be cooked differently.
+- Yazid doesn’t want to taste too many dishes with the same ingredient, so he requires each  main ingredient to be used in at most half of the dishes (i.e. ⌊ ⌋ dishes)
+
+Here ⌊ x ⌋ is the bottom-round function, indicating the maximum integer not exceeding x.
+
+This doesn’t bother Emiya, but he wants to know how many different collocation schemes are available. Two schemes differ if and only if there exists at least one dish that appears in one scheme but not in the other.
+
+Emiya comes to you and asks you to help him calculate. All you need to do is tell him the result of the number of collocation schemes that meet all the requirements modulo the prime number 998,244,353.
+
+Input
+The first line contains two integers n and m, separated by a single space.
+
+From line 2 to line n+1, there are m integers separated by a single space in each line, where the m numbers in line i+1 are ai,1, ai,2, ..., ai,m.
+
+Output
+There’s only one integer in a single line, which is the number of solutions modulo 998,244,353.

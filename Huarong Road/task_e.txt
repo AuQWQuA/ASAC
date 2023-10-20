@@ -1,0 +1,28 @@
+Huarong Road
+
+Problem Description
+B is obsessed with the game called Huarong Road recently, but it always takes him a long time to finish it once. So, he thought of using programming to complete Huarong Road: given a situation, whether Huarong Road can not be completed. If it can be completed, how much time is the least needed?
+
+The Huarong road played by B is slightly different from the classic Huarong Road game. The rules of the game are as follows:
+
+1. There are n × m squares on an n × m board, of which one and only one square is blank, and the other n × m-1 squares have a piece on each square, and the size of each piece is 1 × 1;
+
+2. Some pieces are fixed and some pieces can be moved;
+
+3. Any piece on a square that is adjacent to a blank square (with a common edge) can be moved onto a blank square.
+
+The goal of the game is to move a movable piece in a given position to the goal position.
+
+Given a board, the game can be played q times. Of course, each time the fixed pieces on the board do not change, but the initial position of the blank square on the board, the initial position of the specified movable pieces, and the goal position may be different. On the ith play, the blank square is in column EYi, row EXi, the initial position of the specified movable piece is in column SYi, row SXi, and the goal position is in column TYi, row TXi.
+
+Assume that B is able to move the piece once per second, and the rest of the time is negligible. Please tell B the minimum amount of time each play will take, or tell him that it is impossible to complete the game.
+
+Input
+The first line has 3 integers separated by a space for n, m, q;
+
+The next n lines describe an n × m board with m integers in each row, separated by a space, each integer describing the state of a square on the board, with 0 indicating that the piece on that square is fixed and 1 indicating that the piece on that grid can be moved or that the grid is empty.
+
+The next q lines, each containing 6 integers: EXi, EYi, SXi, SYi, TXi, TYi, separated by a space between every two integers, indicating the position of the blank square in each game, specifying the initial position and the goal position of the specific chess piece.
+
+Output
+There are q lines, each containing 1 integer indicating the minimum amount of time needed to play each game, and output −1 if the goal is impossible to achieve in one game.

@@ -1,0 +1,18 @@
+Queuing Matches 
+
+Problem Description
+Hanhan has two boxes of matches, each containing n matches, and each match has a height. Now arrange the matches in each box in a row. The height of the matches in the same row is not the same. The distance between the two rows is defined as ∑(ai-bi)2
+
+Where ai is the height of the ith match in the first row and bi is the height of the ith match in the second row.
+
+The positions of two adjacent matches in each row can be swapped so that the distance between the two rows can be minimized by swapping. What is the minimum number of swaps needed to get this minimum distance? If this number is too large, output this minimum number of swaps modulo 10^8-3.
+
+Input
+There are three lines, the first of which contains an integer n for the number of matches in each box.
+
+The second line has n integers, separated by spaces, indicating the height of the matches in the first row.
+
+The third line has n integers, separated by spaces, indicating the height of the matches in the second row.
+
+Output
+An integer representing the minimum number of swaps modulo 108-3.

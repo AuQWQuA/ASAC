@@ -1,0 +1,18 @@
+Sum
+
+Problem Description
+A long, narrow strip of paper is evenly divided into n squares, numbered from 1 to n. Each square is colored by color_i (represented by an integer in [1,m]) and a number_i is written on it.
+ 
+Now define a special triplet: (x,y,z), where x, y, z represent the number of the square on the tape. The triplet should satisfy the following two conditions: 
+x, y, z are integers, x<y<z, y−x=z−y
+colorx=colorz 
+The score of a triple satisfying the above condition is specified as (x+z)×(number_x+number_z). The score of the whole tape is prescribed as the sum of the scores of all triples that satisfy the condition. This score can be quite large; you should output the remainder of the score of the entire tape divided by 10,007.
+
+Input
+The first row is two positive integers n and m separated by a space, where n represents the number of squares on the tape and m represents the number of types of colors on the tape. 
+The second row has n positive integers separated by spaces, and the ith number is the number written on the i square on the tape. 
+The third row has n positive integers separated by spaces, and the ith number indicates the color of the i square on the tape.
+
+Output
+An integer representing the remainder of the score of the tape divided by 10007.
+

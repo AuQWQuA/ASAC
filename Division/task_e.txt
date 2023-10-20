@@ -1,0 +1,40 @@
+Division
+
+Problem Description
+In 2048, in the examination room of the 30th CSP certification, Xiaoming, as a contestant, opened the first question. The sample of this problem has n groups of data, numbered from 1 to n, and the scale of data i is ai.
+
+Xiaoming designed a violent program for this problem. For a set of data of size u, the running time of the program is u2. However, after the program has run a set of data of size u, it will run an error on any one set of data of size less than u. The ai in the sample isn’t necessarily incremented, but Xiaoming wants to run the example correctly without modifying the program, so he decides to use a very primitive solution: Divide all the data into segments with contiguous serial numbers, and then merge the data in the same segment into new data whose size is equal to the sum of the sizes of the original data in the segment. Xiaoming will let the size of the new data increase.
+
+In other words, Ming needs to find some cut-off points 1 ≤ k1 < k2 <... < kp < n, such that
+ 
+Note that p can be 0 and at that time, k0 = 0, that is, Xiaoming can run all the data together.
+
+Xiaoming wants the running time to be minimized while running the sample correctly, that is, to minimize
+ 
+
+Xiaoming finds this problem very interesting and asks for your advice: Given n and ai, please find the minimum running time of Xiaoming’s program under the optimal division scheme.
+
+Input
+Due to the large data range of the question, ai of some test points will be generated in the program.
+
+Two integers, n and type, are in the first line. See the program description for the meaning of n, and type denotes the type of input.
+
+1. If type = 0, the ai of the test point is given directly. The following input file: n space-separated integers ai in the second line, indicating the size of each group of data.
+2. If type = 1, ai for this test point will be specially generated, as described below. The following input file: Six space-separated integers x, y, z, b1, b2, m in the second line. In the next m lines, line i (1 ≤ i ≤ m) contains three space-separated positive integers pi, li, ri.
+
+For test points 23~25 with type = 1, ai is generated as follows:
+
+Given integers x, y, z, b1, b2, m, and m triples (pi, li, ri).
+
+Guarantee n ≥ 2. If n > 2, then ∀ 3 ≤ i ≤ n, bi = (x × bi−1 + y × bi−2 + z) mod 230.
+
+Ensure that 1 ≤ pi ≤ n and pm = n. Let p0 = 0, then pi also satisfies that ∀ 0 ≤ i < m has pi < pi+1.
+
+For all 1 ≤ j ≤ m, if the subscript value i (1 ≤ i ≤ n) satisfies pj−1 < i ≤ pj, then there is
+
+  ai = (bi mod(rj - lj + 1) ) + lj
+
+The above data generation method is only used to reduce the size of the input. Standard algorithms do not rely on this generation method.
+
+Output
+Output one line with one integer, indicating the answer.

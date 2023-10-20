@@ -1,0 +1,20 @@
+ Solve the Equation
+
+Problem Description
+Given the polynomial equation:
+
+a0 + a1x + a2x2 + ... + anxn = 0
+
+Find an integer solution to this equation in [1,m] (n and m are both positive integers).
+
+Input
+Enter a total of N + 2 lines.
+
+The first line contains 2 integers, n and m, separated by a space.
+
+The next n+1 lines contain one integer each. The integers are a0, a1, a2 ... an, respectively.
+
+Output
+The first line outputs the number of integer solutions to the equation within [1, m].
+
+Next, there is one integer per line, each representing one integer solution of the equation within [1, m] in ascending order.

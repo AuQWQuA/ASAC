@@ -1,0 +1,22 @@
+Florist
+
+Problem Description
+Dongdong, the florist, planted a row of flowers, each with a height. As the flowers grew bigger and bigger, they became more and more crowded. Dongdong decides to move some of the flowers from the row and leave the rest where they are so that the rest of the flowers have room to grow. He also wants the rest of the flowers to be arranged in a unique way.
+
+Specifically, the height of Dong Dong's flowers can be viewed as a column of integers h1, h2,..., hn. Let the height of the remaining flowers be g1, g2,..., gm, then Dongdong wants at least one of the following two conditions to be satisfied:
+
+Condition A: For all g2i> g2i-1, g2i> g2i+1
+
+Condition B: For all g2i<g2i-1,g2i< g2i+1
+
+Note that both of the above conditions are satisfied when m=1, and at most one of them is satisfied when m > 1.
+
+What is the maximum number of flowers Dongdong can leave in this place?
+
+Input
+The first line contains an integer n, which represents the number of flowers at the beginning.
+
+The second line contains n integers, h1, h2,..., hn, which represent the height of the flowers.
+
+Output
+An integer m represents the number of flowers that can be left in place at most.

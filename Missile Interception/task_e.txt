@@ -1,0 +1,12 @@
+Missile Interception
+
+Problem Description
+After 11 years of keeping a low profile, a certain country has developed a new missile interception system, which can successfully intercept all missiles whose distance does not exceed its working radius. When the working radius is 0, the missile can be intercepted at exactly the same position as it. However, the missile interception system has such a defect: each system can only set the working radius once a day. The use cost of the day is the sum of the squares of the working radius of all systems. 
+One day, the radar caught an enemy missile attack. Since the system is still in the experimental stage, only two systems are in operation. If the current requirement is to intercept all missiles, please calculate the minimum use cost for this day.
+
+Input 
+The first line contains 4 integers x1, y1, x2, and y2, separated by a space between every two integers, indicating that the coordinates of the two sets of missile interception systems are (x1, y1) and (x2, y2) respectively. 
+The second line contains an integer N, which means there are N missiles. In the next N lines, each line contains two integers x and y, separated by a space, indicating the coordinates (x, y) of a missile. The coordinates of different missiles may be the same.
+
+Output  
+The output is only one line and contains an integer, which is the minimum usage cost of the day.

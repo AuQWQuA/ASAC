@@ -1,0 +1,14 @@
+Placing Flowers
+
+Problem Description
+Xiao Ming’s flower shop has just opened. To attract customers, he wants to put a row of flowers in front of the shop, including m flowerpots. By surveying customers’ preferences, Xiao Ming listed n kinds of flowers that the customers like best, numbered from 1 to N. In order to display more kinds of flowers at the door, it is stipulated that the number of the ith kind of flowers should not be more than ai. When arranging flowers, the same kind of flowers should be put together, and different kinds of flowers should be arranged in the order of their serial number, from small to large. Try to write a program to calculate how many different arrangements of placing flowers there are.
+
+Input
+There are two lines. The first line contains two positive integers, n and m, separated by a space. There are n integers in the second line, separated by spaces, indicating a1, a2, ..., an.
+
+For 20% of the data, 0 < n ≤ 8, 0 < m ≤ 8, 0 ≤ ai ≤ 8;
+For 50% of the data, 0 < n ≤ 20, 0 < m ≤ 20, 0 ≤ ai ≤ 20;
+For 100% of the data, 0 < n ≤ 100, 0 < m ≤ 100, 0 ≤ ai ≤ 100.
+
+Output
+There is only one line, containing an integer, indicating how many possible arrangements there are. Note: Since the number of solutions may be large, please output the result of modulo 1000007.  

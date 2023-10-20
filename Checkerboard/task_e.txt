@@ -1,0 +1,14 @@
+Checkerboard
+
+Problem Description
+There is an m×m checkerboard, and each grid on the board may be red, yellow, or no color at all. You will now go from the top left corner of the board to the bottom right corner of the board. 
+At any given moment, the position you are standing in must be colored (not colorless), and you can only go up, down, left, or right. When you go from one grid to another, if both grids are the same color, you don't have to spend any gold coins. If not, it costs you 1 gold coin. 
+In addition, you can spend 2 gold coins to cast a spell to temporarily change the next colorless grid to the color you specify. But the spell can’t be used continuously, and the duration of the spell is very short, which means that if you use the spell and walk onto the temporarily colored grid, you can’t continue to use the spell. You can only use the spell again if you leave the grid and walk onto a grid that is already colored, and when you leave the grid (the one you cast a spell to make colored), the grid becomes colorless. 
+Now you want to go from the top left corner of the board to the bottom right corner of the board, and figure out what’s the minimum amount of gold coins that you spend.
+
+Input
+The first line contains two positive integers, m, and n, separated by a space, representing the size of the board and the number of colored grids on the board. 
+The next n lines, each with three positive integers x,y, and c, represent that the grid with coordinate (x,y) has the color c, where c=1 represents yellow and c=0 represents red. Two adjacent numbers are separated by a space. The coordinate of the grid in the top left corner of the board is (1,1), and the coordinate of the grid in the bottom right corner is (m,m). The rest of the grids are colorless. It is ensured that the top left corner of the board, which is (1,1), is colored.
+
+Output
+An integer that represents the minimum amount of gold coins spent. Print −1 if you can not reach the destination.

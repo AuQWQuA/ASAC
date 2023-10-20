@@ -1,0 +1,19 @@
+ Sightseeing bus
+
+Problem Description
+Y City is a charming town with n beautiful scenic spots. Due to the increasing number of tourists coming, Y city has specially arranged a sightseeing bus to provide more convenient transportation services for tourists. The sightseeing bus appears at scenic spot 1 in minute 0 and then goes to scenic spots 2,3,4,c...,n. It takes Di minutes to drive from scenic spot i to scenic spot i+1. At any given moment, the bus can only drive forward or wait at the scenic spot.
+
+Suppose there are m tourists in total, and each tourist needs to travel from one scenic spot to another one. The ith tourist arrives at scenic spot Ai at minute Ti and wants to travel to scenic spot Bi (Ai < Bi). To make all the passengers reach their destination smoothly, the bus must wait for all the passengers who need to leave from the scenic spot to get on the bus at each station before starting to the next scenic spot.
+
+It is assumed that it does not take time for passengers to get on and off the bus. The travel time of a passenger is the moment of his arrival at the destination minus the moment of his arrival at the departure station. Since there is only one sightseeing bus and sometimes it has to stop to wait for other passengers, passengers complain that the travel time is too long. So the clever driver, ZZ, fitted the bus with k nitrogen accelerators, each of which could make one of the Di -1. You can use multiple accelerators for the same Di, but you must ensure that Di ≥ 0 after using the accelerator.
+So how can ZZ arrange the use of accelerators so that the sum of travel time of all passengers is minimized?
+
+Input
+The first line contains 3 integers n, m, and k, separated by a space between every two integers. They represent the number of attractions, passengers, and nitrogen accelerators respectively.
+
+The second line contains n-1 integers, separated by spaces. And the ith number represents the time it takes to travel from the ith attraction to the i+1 attraction, that is, Di.
+
+There are three integers Ti, Ai, and Bi in each line from line 3 to line m+2, separated by a space between every two integers. Line i+2 indicates the moment when the ith passenger arrives at the departure point, the number of the departure point, and the number of the destination point.
+
+Output
+An integer representing the minimum total travel time.

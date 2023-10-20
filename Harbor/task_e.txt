@@ -1,0 +1,17 @@
+Harbor
+
+Problem Description
+K is a customs officer at a harbor. Many ships arrive at the harbor every day, and there are usually many passengers from different countries on board. 
+K is very interested in the ships that arrived at the harbor. He records the situation of each ship that arrived at the harbor according to the time: For the ith arriving ship, he records the arrival time of the ship ti (in seconds), the number of passengers on board ki, and the nationality of each passenger xi,1, xi,2,..., xi, k. 
+K counts n ships and wants your help in figuring out how many different countries all the passengers who arrived by ship in the 24 hours up to each ship’s arrival time (24 hours = 86,400 seconds) came from. 
+Formally, you need to compute n pieces of information. For the ith message in the output, you need to count how many different numbers in xp,j when ship p satisfies ti−86400<tp≤ti.
+
+Input
+The first line contains a positive integer n, indicating that K records the information of n ships. 
+Next n lines each describe the information of a ship: the first two integers ti and ki respectively represent the time of arrival of the ship at the harbor and the number of passengers on board, followed by ki integers xi,j representing the nationalities of the passengers on board. 
+It is ensured that ti is incremented, and the unit is second; representing that the clock starts from the time that K goes to work, and the ship arrives at the harbor at ti. 
+Ensure that 1≤n≤105, ∑ki≤3*105, 1≤x(i,j)≤105, 1≤t(i−1)≤ti≤109.
+∑ki represents the sum of all ki.
+
+Output
+There are n lines, and the ith line contains an integer indicating the statistics after the ith ship arrives.

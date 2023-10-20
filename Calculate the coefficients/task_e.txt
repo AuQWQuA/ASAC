@@ -1,0 +1,11 @@
+Calculate the coefficients
+
+Problem Description
+Given a polynomial (by+ax)k, please calculate the coefficients of the xn× ym term when the polynomial is expanded.
+
+Input
+The input is only one line and contains 5 integers called a,b,k,n,m, separated by spaces.
+
+Output
+The output is only one line and contains an integer representing the desired coefficient.
+This coefficient can be very large, so output the result modulo 10007.

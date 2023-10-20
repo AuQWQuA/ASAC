@@ -1,0 +1,21 @@
+Find the Way
+
+Problem Description
+In a directed graph G, each edge has a length of 1. Now, given a starting point and an ending point, find a path from the starting point to the ending point in the graph that satisfies the following conditions:
+
+1. The outgoing edges of all points on the path point to points that are directly or indirectly connected to the endpoint.
+2. Make the path shortest while Condition 1 is satisfied.
+
+Note: There may be multiple edges and self-loops in graph G, and the problem guarantees that there is no outgoing edge at the end.
+
+Please output the length of the qualified path.
+
+Input
+The first line has two integers n and m separated by a space, indicating that the graph has n points and m edges.
+
+The next m lines each have 2 integers x, and y, separated by a space, indicating that there is an edge from point x to point y.
+
+The last line has two integers s, t, separated by a space, indicating that the starting point is s and the ending point is t.
+
+Output
+The output is one line and contains an integer indicating the length of the shortest path that satisfies the description of the question. If such a path does not exist, output -1.

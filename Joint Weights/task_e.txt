@@ -1,0 +1,16 @@
+ Joint Weights
+
+Problem Description
+An undirected connected graph G has n points and n-1 edges. The points are numbered from 1 to n. The point numbered i has weight Wi, and the length of each edge is 1. The distance between two points (u, v) on the graph is defined as the shortest distance from point u to point v. For a pair of points (u, v) on a graph G, if their distance is 2, they will have a joint weight of Wv×Wu.
+
+What is the largest joint weight among all ordered pairs of points on G that can produce a joint weight? What is the sum of all the joint weights?
+
+Input
+The first line contains one integer n.
+
+Next n-1 lines each contain 2 positive integers u and v separated by a space, indicating that the points numbered u and v are connected by an edge.
+
+The last line contains n positive integers separated by a space, where the ith integer indicates that the weight of the point numbered i on the graph G is Wi.
+
+Output
+The output consists of 1 line which contains 2 integers, separated by a space. The two integers are the maximum of the joint weights on graph G and the sum of all the joint weights. Since the sum of all the joint weights can be large, please mod 10007 when you print it out.

@@ -1,0 +1,10 @@
+Congruence Equation
+
+Problem Description
+Find the smallest positive integer solution to the congruence equation ax = 1 (mod b) with respect to x.
+
+Input
+One line, containing two positive integers a, and b, separated by a space.
+
+Output
+There is a positive integer x0, which is the smallest positive integer solution. The input data is guaranteed to have a solution.

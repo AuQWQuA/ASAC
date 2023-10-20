@@ -1,0 +1,14 @@
+Buying Pencils
+
+Problem Description
+Teacher P needs to go to the store to buy n pencils as gifts for children to participate in NOIP. She found that there were three different packages of pencils in the store, and the number of pencils in each package could be different, and the price could also be different. To be fair, Teacher P decided to buy pencils with only one kind of packaging. 
+The store does not allow the packaging of pencils to be opened, so Teacher P may need to buy more than n pencils to give gifts to children. 
+Now Teacher P wants to know how much it would cost at least to buy at least n pencils if the store has enough of each package.
+
+Input
+The first line contains a positive integer n representing the number of pencils needed. 
+Each of the next three lines describes a package of pencils with two positive integers: the first integer represents the number of pencils in the package, and the second integer represents the price of the package. 
+It is ensured that all seven numbers are positive integers at most 10,000.
+
+Output
+There is an integer, indicating the minimum amount of money that teacher P needs to spend.

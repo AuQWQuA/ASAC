@@ -1,0 +1,24 @@
+Arrange Seats
+
+Problem description
+In class, there are always some students whispering to the surrounding students, this is a headache for the primary school head teacher. However, Xiaoxue, the head teacher, found some interesting phenomena. When the seats of the students were determined, only a limited number of D students would whisper to each other in class. 
+
+The students sit in M rows and N columns in the classroom. The position of the students sitting in row i and column j is (i, j). In order to facilitate students to enter and exit, K horizontal channels and L vertical channels are set in the classroom. 
+
+So the clever Xiaoxue thought of a way to reduce the problem of students whispering in class: she planned to rearrange the desks and chairs, changing the position of the passage between the desks and chairs, because if a passage separated two students who would whisper in class, then they would not whisper to each other.
+
+Please help to write a program for Xiaoxue to give the best channel division scheme. Under the scheme, the number of students who talk to each other in class is minimal.
+
+Input
+In the first line, there are 5 integers separated by spaces, namely M, N, K, L, D (2 ≤ N, M ≤  1000, 0 ≤ K < M, 0 ≤ L < N, D ≤ 2000).
+
+For the next D lines, there are 4 integers separated by spaces in each line. The 4 integers in the ith line Xi, Yi, Pi, Qi, represents that the two students sitting at (Xi, Yi) and (Pi, Qi) will whisper to each other (The input data ensures that they are next to each other, back and forth or left and right).
+
+The input data ensure the uniqueness of the optimal scheme.
+
+Output
+The output file consists of two lines.
+
+The first line contains K integers, a1, a2, ..., aK, indicates channels are opened between lines a1 and a1+1, between lines a2 and a2+1,... between lines aK and aK+1, where ai < ai+1, and every two integers are separated by spaces (there is no space at the end of the line).
+
+The second line contains L integers, b1, b2..., bL, indicates channels are opened between column b1 and column b1 +1, between column b2 and column b2+1, ..., between column bL and column bL+1, where bi< bi+1 and every two integers are separated by spaces (there is no space at the end of the row).

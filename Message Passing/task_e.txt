@@ -1,0 +1,17 @@
+Message Passing
+
+
+Problem Description
+There are N students (numbered from 1 to N) playing a game of message passing. In the game, each student has a fixed message passing target, where the message passing target of the student numbered i is the student numbered Ti.
+
+At the beginning of the game, everyone only knows his or her own birthday. Later in each round, everyone will simultaneously tell their current birthday information to each other (note: someone may be able to get information from several people, but each person will only give information to one person, which is their target). The game ends when someone gets their date of birth from someone else. How many rounds can the game be played?
+
+Input
+There are two lines.
+
+The first line contains one positive integer n for n people.
+
+The second line contains n positive integers T1, T2, ..., Tn, where the ith integer Ti denotes that the student numbered Ti is the message passing target of the student numbered i, Ti ≤ n and Ti ≠ i.
+
+Output
+There is one integer indicating how many rounds the game can play in total.

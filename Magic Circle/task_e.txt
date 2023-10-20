@@ -1,0 +1,16 @@
+Magic Circle
+
+Problem Description
+The magic war is about to begin once in sixty years, and the great wizard prepares to draw magical energy from the nearby magic field. 
+The great wizard has m magic items, numbered 1, 2,..., m. Each item has a magic value. We use Xi to represent the magic value of the magic item numbered i. Each magic value Xi is a positive integer that does not exceed n, and there may be multiple items with the same magic value.
+The great wizard holds that if and only if four magic items numbered a, b, c, and d satisfy Xa<Xb<Xc<Xd, Xb−Xa=2(Xd−Xc) and Xb−Xa<(Xc−Xb)/3, these four magic items form a magic circle, and he calls these four magic items respectively item A, item B, item C, and item D of this magic circle. 
+Now, the wizard wants to know, for each magic item, the number of times it appears as item A in a  certain magic circle, the number of times it appears as item B, the number of times it appears as item C, and the number of times it appears as item D.
+
+Input
+The first line contains two positive integers n and m separated by a space.
+For the next m lines, each line has a positive integer, and the positive integer in the i+1 line represents Xi, that is, the magic value of the item numbered ii.
+It is ensured that 1≤ n≤ 15000, 1≤m≤40000, 1≤Xi≤n. Each Xi is randomly generated with equal probability within the legal range.
+
+Output
+There are m lines, and each line contain 4 integers. The four integers in the ith line each represents the number of times that item i appears as a, b, c and d.
+Ensure that every number in the standard output does not exceed 109. Two adjacent numbers in each line are separated by exactly one space.

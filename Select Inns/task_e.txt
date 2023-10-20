@@ -1,0 +1,17 @@
+ Select Inns
+
+Problem Description
+There are n distinctive inns along the Lijiang River. The inns are numbered from 1 to n according to their location. Each inn is decorated according to one of the colors (k kinds in total, represented by integers 0 to k-1), and each inn has a coffee shop with its minimum charge.
+
+Two tourists travel to Lijiang together. They like the same color and want to try two different inns, so they decide to stay separately in two inns with the same color. In the evening, they decide to choose a cafe to have coffee in. The cafe is required to be located between the two inns they are staying in (including the inn they are staying in), and the minimum charge of the cafe is no more than p.
+
+They want to find out how many options there are to select their inns so that they could find a cafe with a minimum charge of no more than p yuan for the evening.
+
+Input
+There are n + 1 lines.
+
+In the first line, there are three integers n, k and p, respectively indicating the number of inns, the number of colors, and the highest value of the minimum charge acceptable. Every two integers are separated by a space.
+
+For the next n lines, in line i+1, there are two integers ai and bi, separated by a space. ai represents the decoration color of inn i, and bi represents the minimum charge of the cafe in inn i.
+Output
+An integer representing the total number of accommodation options available.

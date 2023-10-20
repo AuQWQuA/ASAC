@@ -1,0 +1,14 @@
+ The Salesman
+
+Problem Description
+Aming is a salesman who has been sent to Screw Street to promote his company’s products. Screw Street is a dead-end street with the same exit as the entrance, with walls on one side of the street and households on the other. There are a total of N households in Screw Street, and the distance of Household ii to the entrance is Si meters. Since there can be more than one household in the same house, there may be more than one household at an equal distance from the entrance. Aming will enter through the entrance, sell his products to X homes on Screw Street in turn, and then retrace his steps.
+ 
+Aming accumulates 1 point of fatigue for every 1 meter he walks, and selling products to Household ii accumulates Ai points of fatigue. Aming is a workaholic and wants to know, for different X, what is the maximum number of fatigue points he can accumulate without taking extra paths.
+
+Input
+The first line has a positive integer N representing the number of Screw Street households. 
+The next line has N positive integers. The ith integer Si represents the distance from Household ii to the entrance. Guaranteed that S1≤S2≤…≤Sn<108. 
+The next line has N positive integers. The ith integer Ai represents the fatigue value that would accumulate by selling the product to the ith household. Guaranteed that Ai<1000.
+
+Output
+There are N lines, each containing a positive integer, and the integer in the ith row represents the fatigue value accumulated by Aming at most when X= i.

@@ -1,0 +1,19 @@
+Track Construction
+
+Problem Description
+City C is going to host a series of car races. m race tracks need to be built in the city before the race.
+
+C city has a total of n intersections. These intersections are numbered 1, 2, ..., n, there are n-1 two-way roads suitable for the construction of racetracks, each connecting two intersections. The two intersections connected by the ith road are numbered ai and bi, and the length of this road is li. With the help of these n-1 roads, all the other intersections can be reached from any one of them.
+
+A track is a distinct set of roads e1, e2, ..., ek, satisfies that one can start from a certain intersection and pass the road e1, e2, ..., ek (each road passes once, no U-turns allowed) to reach another intersection. The length of a track is equal to the sum of the lengths of the roads that pass through. To ensure safety, each road is required to be traversed by at most one track.
+
+At present, the construction plan of the track has not been determined. Your task is to design a track construction scheme such that the length of the shortest of the m tracks is the largest (i.e. the shortest of the m tracks is as long as possible).
+
+Input
+The first line of the input file contains two positive integers n and m separated by a space, representing the number of intersections and the number of tracks to be built.
+
+For the next n-1 lines, the first line contains three positive integers ai, bi, and li, which represent the number of the two junctions connected by the ith road suitable for the construction of the race track and the length of this road. It is ensured that any two intersections are reachable from each other via these n-1 roads. Every two adjacent numbers in each line are separated by a space.
+
+Output
+The output is only one line and contains an integer representing the maximum length of the track with the smallest length.
+

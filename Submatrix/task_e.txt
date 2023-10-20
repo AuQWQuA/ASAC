@@ -1,0 +1,19 @@
+ Submatrix
+
+Problem Description
+Given the following definition: 
+Submatrix: A new matrix formed by selecting the intersection positions of some rows and some columns from a matrix (keeping the relative order of rows and columns) is called a submatrix of the original matrix. 
+For example, in the left image below, select the elements at the intersection of rows 2 and 4 and columns 2, 4, and 5, and get a 2*3 submatrix as shown in the right image.
+
+One of its submatrixes is: 
+
+Adjacent elements: An element in a matrix is adjacent to the four elements above, below, on its left, and on its right (if any). 
+The score of a matrix: The sum of the absolute values of the differences between each pair of adjacent elements in the matrix. 
+Task: Given a positive integer matrix with n rows and m columns, select a submatrix with r rows and c columns from the matrix such that the score of the submatrix is minimized, and output the score.
+
+Input
+The first line contains four integers n, m, r, and c, separated by a space between every two integers. The meanings of these integers are as described in the problem description.   
+The next n rows, each containing m integers separated by spaces, are used to represent that matrix with n rows and m columns in the problem description.
+
+Output
+The output consists of one row which contains an integer representing the minimum score of the submatrix that satisfies the problem description.

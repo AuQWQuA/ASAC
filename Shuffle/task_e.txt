@@ -1,0 +1,13 @@
+Shuffle
+
+Problem Description
+N students are going to take the shuttle bus from The High School Affiliated to Renmin University to Renmin University. The ith student will be waiting for the bus in the tith minute. Only one shuttle bus is in operation, but the capacity of the shuttle bus can be regarded as infinite. The shuttle bus starts from The High School Affiliated to Renmin University, takes students on board to Renmin University, and then back to The High School Affiliated to Renmin University (to pick up other students). Such a round trip takes a total of m minutes (the time it takes for students to get on and off the shuttle is ignored). The shuttle will take all the students to Renmin University. 
+Kaikai wonders that, if he can arrange the departure time of the shuttle at will, then what is the minimum total waiting time for these students? 
+Note: The shuttle bus can leave immediately after returning to The High School Affiliated to Renmin University.
+
+Input
+The first line contains two positive integers n (n≤500) and m (m≤100), which respectively represent the number of students waiting for the bus and the time of a shuttle bus round trip. 
+The second line contains n positive integers. Every two adjacent numbers are separated by a space. The ith non-negative integer ti (0 ≤ ti ≤ 4×106) represents the time when the ith student arrives at the station.
+
+Output
+There is a line containing an integer, representing the minimum total sum of the waiting time of all these students (unit: minute).

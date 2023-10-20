@@ -1,0 +1,21 @@
+The Battle Between Dragon and Tiger
+
+Problem Description
+Xuanxuan and Kaikai are playing a game called The Battle between Dragon and Tiger. The board of the game is a line segment with n barracks (numbered 1 to n from left to right) on the line segment. Adjacent numbered barracks are separated by 1 cm, meaning the board is a line segment of length n −1 cm. There are ci sappers in barracks i. Figure 1 below is an example of n=6:
+ 
+Xuanxuan is on the left, representing “dragon”; Kaikai is on the right, representing “tiger”. Divided by Barracks m, the sappers on the left belong to the dragon, the sappers on the right belong to the tiger, and the sappers in Barracks m are very tangled, they don’t belong to either side. 
+The power of a barracks is the number of sappers in the barracks × the distance from this barracks to the Barracks m; The power of a playing party is defined as the sum of the power of all the barracks belonging to that party. 
+
+Figure 2 below is an example of n=6 and m=4, where red is dragon and yellow is tiger:
+ 
+
+In the course of the game, at a certain moment, supplemental power including s1 sappers appears in Barracks p1. As a friend of Xuanxuan and Kaikai, you know that they will not be willing to continue playing the game if the gap of power between dragon and tiger is too great. For the game to continue, you need to choose a Barracks p2 and send all of your s2 sappers to Barracks p2 to keep the gap of power between the two sides as small as possible. 
+Note: Any sappers you land in will have the same influence as any sappers in that barracks (if they land in Barracks m, they will not have any influence).
+
+Input
+The first line contains a positive integer n, representing the number of barracks.
+The next line contains n positive integers. Two adjacent numbers are separated by a space. The ith positive integer represents the number of sappers ci in Barrack i at the beginning. 
+The next line contains four positive integers, separated by spaces, representing m, p1, s1, and s2. 
+
+Output 
+There is a line containing a positive integer, p2, which represents the barracks number you selected. If multiple barracks are optimal, select the one with the smallest serial number.

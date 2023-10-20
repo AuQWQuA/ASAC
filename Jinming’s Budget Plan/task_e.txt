@@ -1,0 +1,24 @@
+ Jinming’s Budget Plan
+
+Problem description
+Jinming is very happy today. It’s time to get the keys to the new house. The new house had a very spacious room to himself only. To make him even happier, his mother said to him yesterday, “What you need to buy and how to decorate your room is up to you, as long as it does not exceed n yuan.” This morning, Jinming started to make a budget. He divided the items he wanted to buy into two categories: main items and accessories. Accessories belong to a certain main item. The following table shows some examples of main items and accessories:
+Main Item	Accessory
+Computer	Printer, scanner
+Bookcase	Book
+Table	Lamp, Stationery
+Chair	None
+
+If he wants to buy an item classified as an accessory, he must first buy the main item to which the accessory belongs. Each main item can have 0, 1, or 2 accessories. Accessories no longer have accessories subordinate to themselves. Jinming wants to buy a lot of things, which will definitely exceed his mother’s limit. Therefore, he specified a degree of importance for each item, divided them into five levels: with integers 1 to 5, the fifth level is the most important. He also found out the price of each item on the internet (the prices are all multiples of 10 yuan). He wanted to maximize the sum of the product of the price and the degree of importance of each item without exceeding n yuan (which could be equal to N yuan).
+
+Let the price of the item j be vj, and the importance be wj. A total of k items are selected, numbered j1, j2... jk, then the sum is:
+ .
+Please help Jinming to design a shopping list that meets the requirements.
+
+Input
+The first line of the input file has two integers separated by a space, where n is the total amount of money, and m is the number of items he wants to buy.
+
+From line 2 to line m+1, there are 3 integers each line, where vi, pi, qi in line i+1 represents the price of the item i, the degree of importance of the item i, and the main item it corresponds to. If qi=0, it indicates that the item is a main item. 
+
+Output
+The output file has only one positive integer, representing the answer.
+

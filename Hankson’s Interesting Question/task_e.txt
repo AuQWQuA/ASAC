@@ -1,0 +1,21 @@
+Hankson’s Interesting Question
+
+Problem Description
+Dr. Hanks is a well-known expert in BT (Bio-Tech), and his son is named Hankson. Now Hankson, who has just returned from school, is pondering an interesting question. 
+
+Today in class, the teacher explained how to find the greatest common divisor and least common multiple of two positive integers c1 and c2. Now that Hankson thought he had this knowledge in hand, he began to think of an “inverse problem” of problems such as “finding common divisor” and “finding common multiples”. The problem was like this: Given the positive integers a0,a1,b0,b1, let an unknown positive integer x satisfy: 
+
+1. The greatest common divisor of x and a0 is a1; 
+
+2. The least common multiple of x and b0 is b1. 
+
+Hankson’s “inverse problem” is to find the positive integer x that satisfies the conditions. But after some thought, he realized that such x is not unique, and may not even exist. So, instead, he started thinking about how to solve for the number of x that satisfy the conditions. Please help him program the problem.
+
+Input
+The first line contains a positive integer n, indicating that there are n sets of input data. The following n line has a set of input data for each line, which are four positive integers a0,a1,b0,b1, separated by a space between every two integers. The input data ensures that a0 is divisible by a1 and b1 is divisible by b0.
+
+Output
+There are n lines. The output of each set of input data takes up one line, and it is an integer.
+
+For each set of data: if no such x exists, please output 0; if such x exists, please output the number of x that meet the conditions;
+
