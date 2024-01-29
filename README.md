@@ -18,3 +18,5 @@ The ASAC.zip contains the benchmark of ASAC. The structure of ASAC is as follows
 │ │ │ ├── ans              // Standard Output
 │ │ │ │ ├── x.out				  
 ```
+
+evaluate.py is a script used for evaluation. Place the generated programs in the same folder (for example, folder 'a') and name the program according to the corresponding task (for example, Circle.cpp). You can run the evaluation by executing 'python evaluate.py a'. The evaluation results will be stored in report.txt.
