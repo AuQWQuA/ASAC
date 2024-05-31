@@ -5,7 +5,6 @@ import pickle
 import time
 
 def compile_program(file_path):
-    """编译程序文件并返回可执行文件路径和编译状态"""
     print(f"Compiling {file_path}...")
     file_extension = os.path.splitext(file_path)[1]
     if file_extension in [".cpp", ".c"]:
